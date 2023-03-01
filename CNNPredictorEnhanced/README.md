@@ -1,1 +1,2 @@
 # CNNPredictorEnhanced
+In this project, we attuned "Xception" and "MobileNetV2" convolutional neural networks models to predict whether the patient’s chest x-ray screening images indicated a positive Covid-19 diagnosis. We used Tensorflow to implement our customized models and our best test accuracy for determining Covid or normal was 99% and 64% when adding two additional classes("Pneumonia_bacteria" and "Pheumonia_Virus").
