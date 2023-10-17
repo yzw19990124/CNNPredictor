@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Covid Percent</title>
+  
+</head>
+
+<body style="background: #ffffff;">
+ <div class="login">
+	<h1 style="color:rgb(150, 130, 238);">COVID-19 prediction</h1>
+
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="image" name="Your X-ray Image:" placeholder="Upload an image." required="required" /><br>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict percent population with COVID-19:</button></p>
+    </form>
+
+   <br>
+   <br>
+   <h4 style="color:rgb(130, 135, 238);">
+   {{ prediction_text }} </h4>
+
+ </div>
+
+
+</body>
+</html>
